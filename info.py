@@ -13,14 +13,14 @@ def is_enabled(value, default):
 # Bot information
 PORT = environ.get("PORT", "8000")
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '16929529'))
+API_HASH = environ.get('API_HASH', 'd7b9e677664d2c87db4c4c0205b6e18f')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5469916571:AAHnF1YiPm3Jnd49p0z5ueZEKtzCoSY9Zws')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/8dfe7256883cbc0190478.jpg')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/1283821f19752c9187019.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
